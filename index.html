@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anantharaj S — B.Tech AI & Data Science student portfolio.">
+  <meta name="theme-color" content="#080c16">
+  <meta name="description" content="Anantharaj S — B.Tech AI & Data Science student exploring Python, robotics, automation and digital creativity.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anantharaj S | AI & Data Science">
+  <meta property="og:description" content="Learning, building and exploring technology through code, robotics and creative projects.">
+  <meta name="twitter:card" content="summary">
   <title>Anantharaj S | AI & Data Science</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +17,11 @@
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#home">AS<span>.</span></a>
-    <button class="menu" aria-label="Open menu">☰</button>
-    <nav>
+    <a class="brand" href="#home" aria-label="Anantharaj S home">AS<span>.</span></a>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="menu-icon" aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-navigation" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -26,29 +33,34 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">AI & DATA SCIENCE STUDENT</p>
+        <p class="eyebrow"><span class="status-dot"></span> AI & DATA SCIENCE STUDENT</p>
         <h1>Hi, I'm <span>Anantharaj.</span></h1>
         <h2>Learning. Building. Growing.</h2>
         <p class="lead">
           I'm a 2nd-year B.Tech Artificial Intelligence & Data Science student
-          exploring data, technology, automation and real-world problem solving.
+          exploring Python, robotics, automation and practical problem solving.
         </p>
         <div class="actions">
-          <a class="btn primary" href="#projects">View Projects ↗</a>
+          <a class="btn primary" href="#projects">Explore Projects <span aria-hidden="true">↗</span></a>
           <a class="btn ghost" href="mailto:ananth4s2606@gmail.com">Let's Connect</a>
         </div>
-        <div class="socials">
-          <a href="https://github.com/Ananth4s2606" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/ananth4s" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="socials" aria-label="Social profiles">
+          <a href="https://github.com/Ananth4s2606" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/ananth4s" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="orb"></div>
+      <div class="hero-visual" aria-label="Portrait and abstract robotics-inspired decoration">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="orb" aria-hidden="true"></div>
         <div class="photo-card">
-          <img src="profile.png" alt="Portrait of Anantharaj S">
+          <img src="profile.png" alt="Portrait of Anantharaj S" width="700" height="875" fetchpriority="high">
+          <div class="photo-caption"><span class="caption-mark"></span><span>CURIOUS BY NATURE</span></div>
         </div>
-        <div class="float-card card-one">AI & DS</div>
-        <div class="float-card card-two">BUILD • LEARN • SHIP</div>
+        <div class="float-card card-one"><span class="float-label">FOCUS</span><strong>AI & DS</strong></div>
+        <div class="float-card card-two"><span class="float-label">MINDSET</span><strong>BUILD • LEARN • SHIP</strong></div>
+        <span class="visual-coordinate coordinate-one" aria-hidden="true">09° / 08°</span>
+        <span class="visual-coordinate coordinate-two" aria-hidden="true">SYSTEM ONLINE</span>
       </div>
     </section>
 
@@ -60,16 +72,16 @@
       <div class="about-grid">
         <p>
           I'm Anantharaj S, a B.Tech Artificial Intelligence & Data Science student
-          at JACSICE. I'm currently strengthening my foundations through hands-on
-          learning, projects, workshops and technical challenges.
+          at Jayaraj Annapackiam CSI College of Engineering. I'm strengthening my
+          foundations through hands-on learning, projects, workshops and technical challenges.
         </p>
         <p>
-          My interests include data, Python, digital technology and practical
-          problem solving. I enjoy experimenting with new tools and turning what
-          I learn into projects that have real-world value.
+          I enjoy working with Python, Linux and robotics tools, while also creating
+          digital content and visual designs. My focus is on learning consistently
+          and turning ideas into useful, practical work.
         </p>
       </div>
-      <div class="stats">
+      <div class="stats" aria-label="Education details">
         <div><strong>2nd</strong><span>Year</span></div>
         <div><strong>2025–29</strong><span>Batch</span></div>
         <div><strong>AI & DS</strong><span>Degree</span></div>
@@ -80,15 +92,38 @@
     <section id="skills" class="section alt">
       <div class="section-head">
         <p class="eyebrow">02 / SKILLS</p>
-        <h2>Tools I'm working with.</h2>
+        <h2>My current toolkit.</h2>
+        <p class="section-intro">A snapshot of the tools and capabilities I'm developing, with proficiency levels kept transparent.</p>
       </div>
-      <div class="skill-grid">
-        <article><span>01</span><h3>Python</h3><p>Programming foundations and data-oriented problem solving.</p></article>
-        <article><span>02</span><h3>Data & Analytics</h3><p>Exploring data analysis and visualization workflows.</p></article>
-        <article><span>03</span><h3>Digital Marketing</h3><p>Practical experience creating and working with digital content.</p></article>
-        <article><span>04</span><h3>Editing</h3><p>Intermediate-level image and video editing skills.</p></article>
-        <article><span>05</span><h3>Linux</h3><p>Working with Ubuntu and technical development environments.</p></article>
-        <article><span>06</span><h3>Git & GitHub</h3><p>Learning version control and project deployment workflows.</p></article>
+      <div class="skill-groups">
+        <article class="skill-group">
+          <div class="skill-group-heading"><span class="group-index">01</span><div><h3>Programming & Workflow</h3><p>Core coding and development tools</p></div></div>
+          <div class="skill-list">
+            <div class="skill-item"><span>Python</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Coding</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Git & GitHub</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Linux / Ubuntu</span><span class="level">Intermediate</span></div>
+          </div>
+        </article>
+        <article class="skill-group">
+          <div class="skill-group-heading"><span class="group-index">02</span><div><h3>Robotics & Vision</h3><p>Simulation and computer vision tools</p></div></div>
+          <div class="skill-list">
+            <div class="skill-item"><span>MuJoCo</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>OpenCV</span><span class="level beginner">Beginner</span></div>
+            <div class="skill-item"><span>ROS 2</span><span class="level beginner">Beginner</span></div>
+          </div>
+        </article>
+        <article class="skill-group">
+          <div class="skill-group-heading"><span class="group-index">03</span><div><h3>Creative & Digital</h3><p>Content, design and communication</p></div></div>
+          <div class="skill-list">
+            <div class="skill-item"><span>Social Media Marketing</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Content Creation</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Canva & Poster Design</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Video Editing</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>Communication & Leadership</span><span class="level">Intermediate</span></div>
+            <div class="skill-item"><span>SEO</span><span class="level beginner">Beginner</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -96,10 +131,11 @@
       <div class="section-head">
         <p class="eyebrow">03 / PROJECTS</p>
         <h2>Things I'm building and exploring.</h2>
+        <p class="section-intro">A mix of hands-on technical work and early-stage ideas. Project status is shown clearly.</p>
       </div>
       <div class="project-grid">
         <article class="project featured">
-          <div class="project-number">01</div>
+          <div class="project-topline"><span class="project-number">01 / ROBOTICS</span><span class="project-status progress"><i></i> In progress</span></div>
           <h3>Khoj-O-Drone</h3>
           <p>
             e-Yantra robotics competition work involving ROS 2, OpenCV,
@@ -108,20 +144,20 @@
           <div class="tags"><span>ROS 2</span><span>OpenCV</span><span>MuJoCo</span></div>
         </article>
         <article class="project">
-          <div class="project-number">02</div>
+          <div class="project-topline"><span class="project-number">02 / CAREER TECH</span><span class="project-status concept">Concept</span></div>
           <h3>SkillBridge AI</h3>
           <p>
-            A career intelligence concept focused on skill assessment,
+            A career intelligence platform concept focused on skill assessment,
             skill-gap analysis, learning roadmaps and skill verification.
           </p>
-          <div class="tags"><span>Career Tech</span><span>AI Concept</span></div>
+          <div class="tags"><span>Career Tech</span><span>Platform Concept</span></div>
         </article>
-        <article class="project">
-          <div class="project-number">03</div>
-          <h3>More projects coming</h3>
+        <article class="project project-note">
+          <div class="project-topline"><span class="project-number">03 / NEXT</span><span class="project-status">Exploring</span></div>
+          <h3>More experiments ahead.</h3>
           <p>
-            This portfolio will grow as I complete more academic,
-            hackathon and personal projects.
+            I'm continuing to learn, prototype and document new ideas.
+            More completed work will be added here as it becomes ready to share.
           </p>
           <div class="tags"><span>Learning</span><span>Building</span></div>
         </article>
@@ -146,8 +182,8 @@
       <p>Open to learning, collaborations, student projects and opportunities.</p>
       <a class="email" href="mailto:ananth4s2606@gmail.com">ananth4s2606@gmail.com</a>
       <div class="actions center">
-        <a class="btn primary" href="https://github.com/Ananth4s2606" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/ananth4s" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a class="btn primary" href="https://github.com/Ananth4s2606" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/ananth4s" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -157,6 +193,6 @@
     <span>Built with curiosity & code.</span>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
