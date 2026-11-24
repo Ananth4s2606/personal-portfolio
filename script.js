@@ -1,15 +1,30 @@
 const menu = document.querySelector('.menu');
-const nav = document.querySelector('nav');
+const nav = document.querySelector('#primary-navigation');
+const navLinks = nav ? nav.querySelectorAll('a') : [];
+
+function setMenuOpen(open) {
+  if (!menu || !nav) return;
+  menu.setAttribute('aria-expanded', String(open));
+  menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  nav.classList.toggle('is-open', open);
+}
+
 menu?.addEventListener('click', () => {
-  const open = nav.style.display === 'flex';
-  nav.style.display = open ? '' : 'flex';
-  if (!open) {
-    nav.style.position = 'absolute';
-    nav.style.top = '76px';
-    nav.style.left = '0';
-    nav.style.right = '0';
-    nav.style.padding = '20px 7%';
-    nav.style.flexDirection = 'column';
-    nav.style.background = '#0b0f19';
+  const isOpen = menu.getAttribute('aria-expanded') === 'true';
+  setMenuOpen(!isOpen);
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => setMenuOpen(false));
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false);
+    menu.focus();
   }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 850) setMenuOpen(false);
 });
